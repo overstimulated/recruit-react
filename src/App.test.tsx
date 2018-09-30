@@ -1,10 +1,10 @@
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import { App } from './App';
+import * as ReactDOM from 'react-dom'
+import { AppRouter } from './router';
 
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  // ReactDOM.render(<App page={}/>, div);
+  ReactDOM.render(<AppRouter />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
